@@ -6,6 +6,7 @@ Extract cell labels and areas from a GEF file and save as a TSV file.
 
 import argparse
 import h5py
+import numpy as np
 import pandas as pd
 
 
