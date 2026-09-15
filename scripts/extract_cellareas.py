@@ -37,7 +37,7 @@ def main():
 
     # 读取 GEF
     with h5py.File(args.input, 'r') as f:
-        cell = f[args.cell_path][:]
+        cell = f['/cellBin/cell'][:]
 
     # 构造 DataFrame
     df_cell = pd.DataFrame({
@@ -54,7 +54,7 @@ def main():
         encoding='utf-8-sig'
     )
 
-    print(f'have already saved {len(df_cell)} 个 cell 到 {args.output}')
+    print(f'have already saved {len(df_cell)} 个 cell 到 {.output}')
 
 
 if __name__ == '__main__':
