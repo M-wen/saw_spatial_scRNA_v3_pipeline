@@ -54,7 +54,7 @@ def main():
         encoding='utf-8-sig'
     )
 
-    print(f'have already saved {len(df_cell)} 个 cell 到 {.output}')
+#    print(f'have already saved {len(df_cell)} 个 cell 到 {.output}')
 
 
 if __name__ == '__main__':
